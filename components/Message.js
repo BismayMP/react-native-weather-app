@@ -13,14 +13,14 @@ export default function Message(props) {
   if (error) {
     return (
       <Text style={styles.error}>
-        {error}
+        <p>{error}</p>
       </Text>
     );
   }
 
   return (
     <Text style={styles.info}>
-      {info}
+      <p>{info}</p>
     </Text>
   );
 }
@@ -28,7 +28,7 @@ export default function Message(props) {
 const styles = StyleSheet.create({
   error: {
     fontSize: 25,
-    color: "#FF0000",
+    color: "red",
     padding: 20,
   },
   info: {
